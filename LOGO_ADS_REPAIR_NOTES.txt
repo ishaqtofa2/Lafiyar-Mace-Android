@@ -1,0 +1,8 @@
+Lafiyar Mace targeted update
+
+- App launcher icon now uses the supplied Lafiyar Mace logo.
+- Home feed ad placement now inserts after each 5th visible/matching post and no longer inserts a fallback ad before 5 posts.
+- Article ad placement now follows the server-configured article frequency (defaults to 3 paragraphs), alternates native/banner where enabled, and waits for settings before loading article content.
+- Native placements fall back to a banner only if the native request fails.
+
+Please build and test the APK before replacing the installed app. The live AdMob fill and admin settings still depend on server response and account/ad-unit readiness.

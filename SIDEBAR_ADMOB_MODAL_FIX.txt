@@ -1,0 +1,12 @@
+Lafiyar Mace — Sidebar modal fix
+
+Only change in this update:
+- The navigation drawer now opens on an opaque full-screen modal surface. The Home screen and any banner ad behind it are not left partially visible or tappable while the drawer is open.
+- Existing slogan remains exactly: Promoting Women's Health Through Education and awareness
+- Drawer navigation actions and the rest of the app behavior are unchanged.
+
+Build note:
+The project was not compiled in this environment because Gradle tried to download Gradle 9.3.0 and network access was unavailable. Open the project in Android Studio and build it there.
+
+Security note:
+Signing files (key.jks and upload_certificate.pem) are intentionally excluded from this ZIP. Keep your signing key and passwords private and backed up securely.

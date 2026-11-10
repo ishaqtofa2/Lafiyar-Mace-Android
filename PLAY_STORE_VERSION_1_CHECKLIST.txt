@@ -1,0 +1,26 @@
+LAFIYAR MACE — VERSION 1.0
+============================
+
+Android:
+- versionCode: 1
+- versionName: 1.0
+- applicationId: com.maganimata.app
+- targetSdk: 35
+- minSdk: 24
+
+IMPORTANT BEFORE PLAY STORE UPLOAD
+----------------------------------
+1. Build a signed Android App Bundle (.aab), not an unsigned APK.
+2. Replace the Google AdMob TEST App ID in app/src/main/AndroidManifest.xml
+   with the real production AdMob App ID:
+   ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXX
+3. Make sure every production AdMob ad unit ID is used in the app/backend.
+4. Configure the production Meta Audience Network credentials if Meta ads
+   are enabled.
+5. Create/use a release signing key and keep the keystore and passwords safe.
+6. Complete the Play Console Data Safety, App Content, target audience,
+   privacy policy and store listing sections.
+7. Test the signed release build on a physical Android phone before upload.
+
+This source package is set to Version 1.0 / versionCode 1.
+It is not a Play Store-signed AAB by itself.

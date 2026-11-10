@@ -1,0 +1,16 @@
+Lafiyar Mace - targeted navigation/article patch
+
+Changes made only to:
+- app/src/main/java/com/maganimata/app/MainActivity.java
+- app/src/main/java/com/maganimata/app/PostActivity.java
+
+Included:
+- Sidebar opened by hamburger menu.
+- Bottom navigation reduced to Home, Groups, More.
+- Categories, Saved, Tools, Profile, Settings moved to sidebar.
+- Logout separated as its own sidebar item with confirmation.
+- Account bottom-navigation item removed and replaced with Profile in sidebar.
+- Removed arrow from article Read labels.
+- PostActivity renders the selected article data passed from Home immediately when available, rather than relying on posts.php?id being supported by the backend.
+
+Please back up the current project before replacing it. Build and test in Android Studio before installing. No claim is made that a device build or live backend test was completed here.

@@ -1,0 +1,19 @@
+LAFIYAR MACE — REVIEW AND TARGETED FIX
+
+Confirmed issue found in PostActivity.java:
+- Api.get() runs its callback on a worker thread (see Api.java, where each GET starts a new Thread).
+- loadAdSettingsThenOpenPost() previously called openPostAfterSettings() directly inside that callback.
+- openPostAfterSettings() can call render(), which removes/adds Android views. Updating views from the worker thread can throw CalledFromWrongThreadException and crash the article screen.
+
+Fix applied:
+- Both success and error callbacks now switch to the UI thread with runOnUiThread() before applying ad settings and opening/rendering the article.
+- The callback also checks isFinishing()/isDestroyed() before touching the Activity.
+
+Other observations:
+- MainActivity passes title/content/image/category/date to PostActivity when a feed article is tapped, so article display can use the already-fetched post data.
+- The package/application ID arrangement is intentional in this project: namespace com.maganimata.app; applicationId com.lafiyarmace.app.
+- Existing Logcat excerpt from the user did not show a FATAL EXCEPTION for this run, so this code issue is a confirmed threading risk, not proof that it was the only crash cause.
+
+Build verification:
+- Could not run a fresh Gradle build in this environment because the Gradle wrapper attempted to download Gradle 9.3.0 and network DNS was unavailable (UnknownHostException: services.gradle.org).
+- The ZIP contains the existing APK from the supplied project; it is NOT a newly rebuilt APK with this fix. Open the project in Android Studio and run :app:assembleDebug to build the patched source.

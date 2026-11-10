@@ -1,0 +1,12 @@
+LAFIYAR MACE - SIDEBAR AND SLOGAN UPDATE
+
+Changes made:
+- Redesigned the navigation sidebar with a branded header, logo, readable menu items, and footer.
+- Kept the sidebar free of ads and ad-like elements.
+- Replaced "Trusted health information for women" with:
+  "Promoting Women's Health Through Education and awareness"
+
+Scope:
+- MainActivity.java is the only app source file changed.
+- Existing navigation actions and ad placement code outside the sidebar were left unchanged.
+- This source update has not been built into a new APK in this environment because the Gradle distribution could not be downloaded. Open the project in Android Studio and build it there.

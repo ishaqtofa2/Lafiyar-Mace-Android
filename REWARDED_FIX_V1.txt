@@ -1,0 +1,7 @@
+Lafiyar Mace Version 1.0 — Rewarded Ad Fix
+
+Rewarded uses normal AdMob RewardedAd, not Rewarded Interstitial.
+Article tap shows an explicit choice: WATCH AD or CONTINUE WITHOUT AD.
+After a completed Rewarded ad, the article opens without immediately triggering the normal interstitial counter.
+If Rewarded is unavailable, the article opens normally.
+Version: 1.0 / versionCode 1.

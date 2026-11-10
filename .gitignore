@@ -1,0 +1,13 @@
+.gradle/
+**/build/
+build/
+local.properties
+*.jks
+*.keystore
+*.pem
+*.p12
+.env
+.idea/
+.DS_Store
+backend/config/config.php
+app/release/

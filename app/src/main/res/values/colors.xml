@@ -1,0 +1,8 @@
+<resources>
+    <color name="purple">#C94380</color>
+    <color name="purple_dark">#8E3A7C</color>
+    <color name="pink_soft">#FCE7F1</color>
+    <color name="bg">#FFF8FC</color>
+    <color name="text_dark">#30272E</color>
+    <color name="text_muted">#716871</color>
+</resources>
